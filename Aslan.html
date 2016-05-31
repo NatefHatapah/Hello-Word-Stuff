@@ -3,17 +3,30 @@
 <head>
   <title>Bootstrap Case</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="styleAslan.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script>
 $(document).ready(function(){
   $("p").hide();
     $("button").click(function(){
         $("p").slideToggle();
+    });  
+    
+    $( "#accordion" ).accordion();
+    
+    $("#cool").click(function(){
+      $("#hot").animate({
+        height:'toggle'
     });
+});
+  
 });
 </script>
 </head>
@@ -42,11 +55,20 @@ $(document).ready(function(){
     <button>For more Information</button>
     <br> 
     <p>What do you want?</p>
-
     </div>
     <div id="Jquery" class="tab-pane fade">
       <h3>Jquery</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    aaaaaaaaaaaaaaaaaaa
+    
+       <center>
+
+   <div id="cool">
+     <button style="background-image:url('https://farm6.staticflickr.com/5537/14404898298_c86d617c73_o.png')"><font color="white" size="6">Start Animation</font></button>   </div>
+      <br><br>
+           <div id="hot" style="background-image:url('https://farm4.staticflickr.com/3498/3886288131_7b65010248_z.jpg');height:515px;width:640px;"></div>
+      </center>
+  </div>
+</div>
     </div>
     <div id="Angular1" class="tab-pane fade">
       <h3>Angular 1</h3>

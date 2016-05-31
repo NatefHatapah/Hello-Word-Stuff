@@ -1,0 +1,16 @@
+.pollSlider{
+    position:fixed;
+    height:100%;
+    background:red;
+    width:200px;
+    right:0px;
+    margin-right: -200px;
+}
+#pollSlider-button{
+    position:fixed;
+    width:100px;
+    height:50px;
+    right:0px;
+    background:green;
+    top:100px;
+}
